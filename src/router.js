@@ -107,6 +107,11 @@ export default new Router({
       meta: { layout: 'login' },
     },
     {
+      path: '/logout',
+      name: 'logout',
+      meta: { layout: 'login' },
+    },
+    {
       path: '*',
       redirect: '/errors',
     },
