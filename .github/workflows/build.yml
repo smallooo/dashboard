@@ -40,7 +40,7 @@ jobs:
       - name: Commit embed files
         run: |
           cd ..
-          git clone https://github.com/gorse-io/dashboard.git dashboard-statik
+          git clone https://github.com/smallooo/dashboard.git dashboard-statik
           cd dashboard-statik
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
