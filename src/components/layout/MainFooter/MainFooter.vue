@@ -44,6 +44,7 @@ export default {
        * The copyright information.
        */
     copyright: {
+
       type: String,
       default: 'Copyright © 2021 zhenghaoz',
     },
