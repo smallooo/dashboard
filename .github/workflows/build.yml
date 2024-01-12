@@ -30,7 +30,7 @@ jobs:
 
       - name: Install Go
         uses: actions/setup-go@v2
-        
+
       - name: Install statik & build embed files
         run: |
           export PATH=$PATH:$(go env GOPATH)/bin
@@ -48,7 +48,7 @@ jobs:
           git rm -r --cached .
           rm statik.go go.mod go.sum
           cp -f ../dashboard/statik/statik.go statik.go
-          go mod init github.com/gorse-io/dashboard
+          go mod init github.com/smallooo/dashboard
           go mod tidy
           git add statik.go go.mod go.sum
           git commit -m "Build embed files"
